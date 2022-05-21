@@ -121,6 +121,11 @@ run();
 // });
 
 
+// Dummy API to update server
+app.get('/hero', (req, res) => {
+    res.send('Hero meets Heroku');
+})
+
 app.listen(port, () => {
     console.log('Listening to port ', port);
 });
